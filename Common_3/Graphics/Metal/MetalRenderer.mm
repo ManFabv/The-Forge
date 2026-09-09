@@ -1820,7 +1820,7 @@ VkResult vkAllocateMemory(VkDevice device, const VkMemoryAllocateInfo* pAllocate
     {
         VkDeviceMemory_T* memory =
             (VkDeviceMemory_T*)pAllocator->pfnAllocation(NULL, sizeof(VkDeviceMemory_T), alignof(VkDeviceMemory_T), 0);
-        memset(memory, 0, sizeof(VkDeviceMemory_T));
+		memset((void*)memory, 0, sizeof(VkDeviceMemory_T));
         memory->pHeap = [device->pDevice newHeapWithDescriptor:heapDesc];
 
 #if defined(ENABLE_GRAPHICS_DEBUG_ANNOTATION)

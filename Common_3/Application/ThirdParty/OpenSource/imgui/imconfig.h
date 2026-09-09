@@ -107,6 +107,15 @@
         constexpr ImVec4(const MyVec4& f) : x(f.x), y(f.y), z(f.z), w(f.w) {}   \
         operator MyVec4() const { return MyVec4(x,y,z,w); }
 */
+#if defined(__clang__)
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wnontrivial-memaccess"
+#pragma clang diagnostic ignored "-Wdynamic-class-memaccess"
+#pragma clang diagnostic ignored "-Wvector-conversion"
+#pragma clang diagnostic ignored "-Wc++11-narrowing"
+#pragma clang diagnostic ignored "-Wuninitialized"
+#pragma clang diagnostic ignored "-Wconditional-uninitialized"
+#endif
 // Note we force using TF math types throughout the code base (see how this define is used in imgui.h)
 #define FORGE_UI_IMGUI_FORCE_MATH_TYPES
 #define IMGUI_DEFINE_MATH_OPERATORS_IMPLEMENTED

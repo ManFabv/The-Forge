@@ -1,0 +1,18 @@
+STRUCT(VSInput)
+{
+    DATA(float4, Position, POSITION);
+};
+
+STRUCT(VSOutput)
+{
+    DATA(float4, Position, SV_Position);
+};
+
+ROOT_SIGNATURE(DefaultRootSignature)
+VSOutput VS_MAIN(VSInput In)
+{
+    INIT_MAIN;
+    VSOutput Out;
+    Out.Position = In.Position;
+    RETURN(Out);
+}

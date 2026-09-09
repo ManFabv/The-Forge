@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Common_3">
+      <FileRef
+         location = "group:../../Build_Props/XCode">
+      </FileRef>
+      <FileRef
+         location = "group:The-Forge/The-Forge.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Engine_3">
+      <FileRef
+         location = "group:EngineApp/EngineApp.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>

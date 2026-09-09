@@ -56,11 +56,11 @@
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-pt --input ../../../../../../Examples_3/Unit_Tests/UnitTestResources/Textures --output ../../../../../../Examples_3/Unit_Tests/UnitTestResources/ProcessedFiles/Textures --in-all --out-png"
+            argument = "-pt --input ../../../../../../Engine_3/Projects/UnitTestResources/Textures --output ../../../../../../Engine_3/Projects/UnitTestResources/ProcessedFiles/Textures --in-all --out-png"
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-pgltf --input &quot;../../../../../../Examples_3/Unit_Tests/UnitTestResources/Meshes&quot; --output &quot;../../../../../../Examples_3/Unit_Tests/UnitTestResources/ProcessedFiles/Meshes&quot; --force"
+            argument = "-pgltf --input &quot;../../../../../../Engine_3/Projects/UnitTestResources/Meshes&quot; --output &quot;../../../../../../Engine_3/Projects/UnitTestResources/ProcessedFiles/Meshes&quot; --force"
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
