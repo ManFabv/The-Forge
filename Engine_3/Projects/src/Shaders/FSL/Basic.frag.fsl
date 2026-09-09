@@ -1,0 +1,11 @@
+STRUCT(VSOutput)
+{
+    DATA(float4, Position, SV_Position);
+};
+
+ROOT_SIGNATURE(DefaultRootSignature)
+float4 PS_MAIN(VSOutput In)
+{
+    INIT_MAIN;
+    RETURN(float4(1.0f, 1.0f, 1.0f, 1.0f));
+}

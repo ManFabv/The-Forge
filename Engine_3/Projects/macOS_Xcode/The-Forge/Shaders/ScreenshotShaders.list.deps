@@ -1,0 +1,10 @@
+:/Users/fabricio/Dev/TheForgeProject/The-Forge/Common_3/Application/Screenshot/Shaders/FSL/ScreenshotShaders.list
+
+copy.comp
+"/Users/fabricio/Dev/TheForgeProject/The-Forge/Common_3/Application/Screenshot/Shaders/FSL/../../../../Graphics/FSL/defaults.h"
+"/Users/fabricio/Dev/TheForgeProject/The-Forge/Common_3/Application/Screenshot/Shaders/FSL/../../../../Graphics/FSL/fsl_srt.h"
+"/Users/fabricio/Dev/TheForgeProject/The-Forge/Common_3/Application/Screenshot/Shaders/FSL/../../../../Graphics/FSL/metal_srt.h"
+"/Users/fabricio/Dev/TheForgeProject/The-Forge/Common_3/Application/Screenshot/Shaders/FSL/Copy.comp.fsl"
+"/Users/fabricio/Dev/TheForgeProject/The-Forge/Common_3/Tools/ForgeShadingLanguage/includes/../../../../Common_3/Graphics/ShaderUtilities.h.fsl"
+"/Users/fabricio/Dev/TheForgeProject/The-Forge/Common_3/Tools/ForgeShadingLanguage/includes/../../../../Common_3/Graphics/../Utilities/Math/ShaderUtilities.h"
+"/Users/fabricio/Dev/TheForgeProject/The-Forge/Common_3/Application/Screenshot/Shaders/FSL/Copy.comp.srt.h"

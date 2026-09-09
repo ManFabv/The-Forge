@@ -93,8 +93,8 @@ extern "C"
      (t) ? stbds_temp((t)-1) : 0)
 #define bhdel(t, k) bhdel_impl(t, k, __FILE__, __LINE__, __FUNCTION__, "bhdel")
 
-#ifdef STBDS_UNIT_TESTS
-    static void stbds_bstring_unit_tests()
+#ifdef STBDS_Projects
+    static void stbds_bstring_Projects()
     {
         struct
         {
@@ -190,7 +190,7 @@ extern "C"
         }
     }
 
-#endif // STBDS_UNIT_TESTS
+#endif // STBDS_Projects
 
 #ifdef __cplusplus
 }

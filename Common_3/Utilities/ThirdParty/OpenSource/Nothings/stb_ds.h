@@ -35,11 +35,11 @@ COMPILE-TIME OPTIONS
      substitute your own functions instead by defining these symbols. You must either
      define both, or neither. Note that at the moment, 'context' will always be NULL.
      @TODO add an array/hash initialization function that takes a memory context pointer.
-  #define STBDS_UNIT_TESTS
-     Defines a function stbds_unit_tests() that checks the functioning of the data structures.
+  #define STBDS_Projects
+     Defines a function stbds_Projects() that checks the functioning of the data structures.
   Note that on older versions of gcc (e.g. 5.x.x) you may need to build with '-std=c++0x'
      (or equivalentally '-std=c++11') when using anonymous structures as seen on the web
-     page or in STBDS_UNIT_TESTS.
+     page or in STBDS_Projects.
 LICENSE
   Placed in the public domain and also MIT licensed.
   See end of file for detailed license information.
@@ -321,7 +321,7 @@ CREDITS
     Tobias Mansfield-Williams
 */
 
-#ifdef STBDS_UNIT_TESTS
+#ifdef STBDS_Projects
 #ifndef _CRT_SECURE_NO_WARNINGS
 #define _CRT_SECURE_NO_WARNINGS
 #endif
@@ -528,8 +528,8 @@ typedef struct stbds_string_arena stbds_string_arena;
 STB_DS_API extern char * stbds_stralloc_func(stbds_string_arena *a, char *str STBDS_FN_ALLOC_ARGS);
 STB_DS_API extern void   stbds_strreset_func(stbds_string_arena *a STBDS_FN_ALLOC_ARGS);
 
-// have to #define STBDS_UNIT_TESTS to call this
-STB_DS_API extern void stbds_unit_tests(void);
+// have to #define STBDS_Projects to call this
+STB_DS_API extern void stbds_Projects(void);
 
 ///////////////
 //
@@ -2122,7 +2122,7 @@ void stbds_strreset_func(stbds_string_arena *a STBDS_FN_ALLOC_ARGS)
 //   UNIT TESTS
 //
 
-#ifdef STBDS_UNIT_TESTS
+#ifdef STBDS_Projects
 #include <stdio.h>
 #include "../../../Interfaces/ILog.h"
 
@@ -2152,7 +2152,7 @@ typedef struct alignas(STBDS_TEST_ALIGNMENT) alignedStruct
 	int value;
 }alignedStruct;
 
-void stbds_unit_tests(void)
+void stbds_Projects(void)
 {
 #if defined(_MSC_VER) && _MSC_VER <= 1200 && defined(__cplusplus)
   // VC6 C++ doesn't like the template<> trick on unnamed structures, so do nothing!
